@@ -534,35 +534,35 @@ elif page == "5. Next Steps & Recommendations":
     st.markdown("---")
 
     st.subheader("Business Recommendations")
-st.markdown("##### Target Low-Activity Customers Early")
-st.markdown("""
-Customers with fewer than 40 transactions per year and spending under $2,000 should be flagged
-as at-risk. The bank should proactively engage them with personalized offers, cashback incentives,
-or spending challenges before disengagement leads to churn.
-""")
-
-st.markdown("##### Increase Product Cross-Selling")
-st.markdown("""
+    st.markdown("##### Target Low-Activity Customers Early")
+    st.markdown("""
+    Customers with fewer than 40 transactions per year and spending under $2,000 should be flagged
+    as at-risk. The bank should proactively engage them with personalized offers, cashback incentives,
+    or spending challenges before disengagement leads to churn.
+    """)
+    
+    st.markdown("##### Increase Product Cross-Selling")
+    st.markdown("""
 Customers with only 1–2 bank products churn at a significantly higher rate. Offering complementary
 products (savings accounts, loans, insurance) deepens the relationship and increases switching costs.
 """)
-st.markdown("##### Monitor Utilization Drops")
-st.markdown("""
+    st.markdown("##### Monitor Utilization Drops")
+    st.markdown("""
 A drop in `Avg_Utilization_Ratio` to near zero is a strong early warning signal. Automated alerts
 should be triggered when a customer's utilization drops significantly month-over-month.
 """)
-st.markdown("##### Review Platinum Card Strategy")
-st.markdown("""
+    st.markdown("##### Review Platinum Card Strategy")
+    st.markdown("""
 Platinum card holders show a slightly higher churn rate compared to other categories.
 The bank should investigate whether the product benefits are meeting customer expectations
 at that tier.
  """)
+    
+    
+    st.markdown("---")
+    st.subheader("Summary of Key Findings")
 
-
-st.markdown("---")
-st.subheader("Summary of Key Findings")
-
-findings = {
+    findings = {
         "Finding": [
             "Transaction count & amount",
             "Credit utilization",
@@ -589,4 +589,4 @@ findings = {
         ]
     }
 
-st.dataframe(pd.DataFrame(findings), use_container_width=True, hide_index=True)
+    st.dataframe(pd.DataFrame(findings), use_container_width=True, hide_index=True)
